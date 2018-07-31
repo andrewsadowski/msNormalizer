@@ -5,7 +5,7 @@ const parser = require('subtitles-parser');
 const srt = fs.readFileSync('test.srt', 'utf8');
 var data = parser.fromSrt(srt);
 
-const checkTimeStamps = sub => {
+const updateTimeStamps = sub => {
   for (let i = 0; i < sub.length; i++) {
     console.log('outer loop');
 
@@ -22,8 +22,17 @@ const checkTimeStamps = sub => {
         console.log(sub[j], sub[i]);
       }
     }
+
+    const updatedSrt = parser.toSrt(sub);
+    fs.writeFile('updatedTest.srt', updatedSrt, err => {
+      if (err) throw err;
+      console.log('Updated Srt created');
+    });
   }
   return sub;
 };
 
-checkTimeStamps(data);
+updateTimeStamps(data);
+
+// const updatedSub = updateTimeStamps(data);
+// const updatedSrt = parser.toSrt(updatedSub);
