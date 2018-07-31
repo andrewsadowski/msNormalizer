@@ -1,4 +1,4 @@
-# SRT MS Time Fixer
+# SRT-MS-Timestamp-Fixer
 
 This node CLI checks for discrepancies in the MS from the end-time and start-time of preceeding subtitles. It then updates the MS to be continuous.
 
