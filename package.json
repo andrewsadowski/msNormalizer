@@ -1,0 +1,15 @@
+{
+  "name": "srt-time-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "subtitle": "^2.0.0",
+    "subtitles-parser": "0.0.2"
+  }
+}
