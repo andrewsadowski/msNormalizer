@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start:watch": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "subtitle": "^2.0.0",
     "subtitles-parser": "0.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
   }
 }
