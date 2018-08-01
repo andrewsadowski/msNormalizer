@@ -43,6 +43,3 @@ const updateMSTimeStamps = sub => {
 };
 
 updateMSTimeStamps(data);
-
-// const updatedSub = updateTimeStamps(data);
-// const updatedSrt = parser.toSrt(updatedSub);
