@@ -19,11 +19,5 @@ npm install
 CD into directory and type:
 
 ```
-npm run start
-```
-
-or
-
-```
-npm run start:watch
+node index.js -f 'srtYouNeedChecked.ext'
 ```
