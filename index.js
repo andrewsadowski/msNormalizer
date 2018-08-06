@@ -8,7 +8,7 @@ const argv = require('yargs')
 
 let filePath;
 
-if (argv === 'f') {
+if (argv.f) {
   filePath = argv.f;
 } else {
   filePath = 'test.srt';
