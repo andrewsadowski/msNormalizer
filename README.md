@@ -19,5 +19,5 @@ npm install
 CD into directory and type:
 
 ```
-node index.js -f 'srtYouNeedChecked.ext'
+node index.js -f 'srtYouNeedFixed.ext'
 ```
