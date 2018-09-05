@@ -2,7 +2,7 @@ const mocha = require('mocha');
 const expect = require('expect');
 const parser = require('subtitles-parser');
 const fs = require('fs');
-const { msNormalizer } = require('./index.js');
+const { msNormalizer } = require('./msNormalizer.js');
 
 const data = fs.readFileSync('test.srt', 'utf8');
 const parsedData = parser.fromSrt(data);
