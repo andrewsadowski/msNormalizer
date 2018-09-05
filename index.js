@@ -48,3 +48,7 @@ const updateMSTimeStamps = sub => {
 };
 
 updateMSTimeStamps(data);
+
+module.exports = {
+  updateMSTimeStamps
+};
