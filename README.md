@@ -19,5 +19,5 @@ npm install
 CD into directory and type:
 
 ```
-node index.js -f 'srtYouNeedFixed.ext'
+node msNormalizer.js -f 'srtYouNeedFixed.ext'
 ```
