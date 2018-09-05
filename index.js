@@ -18,6 +18,11 @@ if (argv.f) {
 const srt = fs.readFileSync(filePath, 'utf8');
 var data = parser.fromSrt(srt);
 
+/**
+ * @param {object} sub - a parsed object containing Index, StartTime/StopTime, Text
+ * @return {string} sub - returns a subtitle file (via fs) as well as a properly formatted srt
+ */
+
 const updateMSTimeStamps = sub => {
   for (let i = 0; i < sub.length; i++) {
     for (let j = i + 1; j <= i + 1; j++) {
