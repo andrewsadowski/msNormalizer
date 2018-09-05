@@ -23,7 +23,7 @@ var data = parser.fromSrt(srt);
  * @return {string} sub - returns a subtitle file (via fs) as well as a properly formatted srt
  */
 
-const updateMSTimeStamps = sub => {
+const msNormalizer = sub => {
   for (let i = 0; i < sub.length; i++) {
     for (let j = i + 1; j <= i + 1; j++) {
       if (sub[j] === undefined) return;
@@ -47,8 +47,8 @@ const updateMSTimeStamps = sub => {
   return sub;
 };
 
-updateMSTimeStamps(data);
+msNormalizer(data);
 
 module.exports = {
-  updateMSTimeStamps
+  msNormalizer
 };
