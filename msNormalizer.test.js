@@ -18,4 +18,9 @@ describe('msNormalizer Tests', done => {
     expect(typeof parsedData).toBe("object");
   });
 
+  xit('should update incongruous MS data', () => {
+    let normalizedOutput = msNormalizer(parsedData);
+    console.log(parsedData);
+  });
+
 });
