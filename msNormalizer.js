@@ -46,7 +46,7 @@ const msNormalizer = filePath => {
   return sub;
 };
 
-msNormalizer(data);
+msNormalizer(filePath);
 
 module.exports = {
   msNormalizer
