@@ -9,6 +9,9 @@
     "test": "mocha msNormalizer.test.js",
     "test:watch": "nodemon --exec 'npm test'"
   },
+  "bin": {
+    "msNormalizer": "./bin/global.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
