@@ -2,15 +2,15 @@
   "name": "srt-time-updater",
   "version": "1.0.0",
   "description": "",
-  "main": "msNormalizer.js",
+  "main": "lib/msNormalizer.js",
   "scripts": {
-    "start": "node msNormalizer.js",
-    "start:watch": "nodemon msNormalizer.js",
-    "test": "mocha msNormalizer.test.js",
+    "start": "node lib/msNormalizer.js",
+    "start:watch": "nodemon lib/msNormalizer.js",
+    "test": "mocha lib/msNormalizer.test.js",
     "test:watch": "nodemon --exec 'npm test'"
   },
   "bin": {
-    "msNormalizer": "./bin/global.js"
+    "msNormalizer": "./bin/msNormalizer-global.js"
   },
   "author": "",
   "license": "ISC",
