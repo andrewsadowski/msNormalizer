@@ -1,7 +1,7 @@
 {
   "name": "srt-ms-normalizer",
   "version": "1.0.2",
-  "description": "Node CLI that checks for discrepancies in the MS portion of the timestamp from the end-time and start-time of subtitles. It then updates the MS to be continuous.",
+  "description": "NodeJS CLI that fixes millisecond discrepancies between individual subtitles.",
   "url": "https://github.com/andrewsadowski/srt-millisecond-normalizer",
   "main": "lib/msNormalizer.js",
   "scripts": {
@@ -13,6 +13,12 @@
   "bin": {
     "msNormalizer": "./bin/msNormalizer-global.js"
   },
+  "keywords": [
+    "subtitle",
+    "srt",
+    "ms",
+    "timestamp"
+  ],
   "preferGlobal": true,
   "author": "Andrew N Sadowski",
   "license": "ISC",
