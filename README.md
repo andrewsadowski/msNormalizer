@@ -16,8 +16,10 @@ npm install -g srt-ms-normalizer
 
 ### Running Application
 
-CD into directory and type:
+After installing globally via NPM:
 
 ```
 msNormalizer -f '/path/to/file.srt'
 ```
+
+A srt will be generated in the same location as the srt provided with all millisecond discrepancies normalized.
