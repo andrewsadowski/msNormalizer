@@ -1,7 +1,8 @@
 {
   "name": "srt-ms-normalizer",
   "version": "1.0.1",
-  "description": "",
+  "description": "node CLI checks for discrepancies in the MS portion of the timestamp from the end-time and start-time of subtitles. It then updates the MS to be continuous.",
+  "url": "https://github.com/andrewsadowski/srt-millisecond-normalizer",
   "main": "lib/msNormalizer.js",
   "scripts": {
     "start": "node lib/msNormalizer.js",
