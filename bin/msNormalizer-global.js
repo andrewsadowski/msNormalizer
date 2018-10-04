@@ -1,25 +1,25 @@
 #!/usr/bin/env node
 
-const parser = require('subtitles-parser');
-const fs = require('fs');
-const path = require('path');
+const parser = require("subtitles-parser");
+const fs = require("fs");
+const path = require("path");
 const {
   getDefaultDirPath,
   getFileName,
   writeSubToFile
-} = require('../lib/utils.js');
-const argv = require('yargs')
-  .alias('f', 'filePath')
-  .usage('Usage: add a file with the -f flag')
-  .example('node index.js -f "fileName.ext"')
-  .help('h').argv;
+} = require("../lib/utils.js");
+const argv = require("yargs")
+  .alias("f", "filePath")
+  .usage("Usage: add a file path with the -f flag")
+  .example('msNormalizer -f "/absolute/path/to/file.srt"')
+  .help("h").argv;
 
 let filePath;
 
 if (argv.f) {
   filePath = argv.f;
 } else {
-  filePath = 'test.srt';
+  filePath = "test.srt";
 }
 
 /**
@@ -27,13 +27,13 @@ if (argv.f) {
  * @return {string} sub - returns a subtitle file as well as a properly formatted srt
  */
 const msNormalizer = (async filePath => {
-  const srt = fs.readFileSync(filePath, 'utf8');
+  const srt = fs.readFileSync(filePath, "utf8");
 
   const parsedDirPath = getDefaultDirPath(filePath);
   const subtitleFileName = getFileName(filePath);
 
   const outputNameAndPath = path.join(
-    parsedDirPath + subtitleFileName + '_msUpdated.srt'
+    parsedDirPath + subtitleFileName + "_msUpdated.srt"
   );
 
   let sub = parser.fromSrt(srt);
@@ -49,9 +49,7 @@ const msNormalizer = (async filePath => {
         let jSS = sub[j].startTime.substr(6, 2);
 
         if (iMS > jMS && iSS === jSS) {
-          console.log(
-            `iMS: ${iMS} should be the same as jMS: ${jMS}`
-          );
+          console.log(`iMS: ${iMS} should be the same as jMS: ${jMS}`);
           sub[j].startTime = sub[j].startTime.replace(/\d{3}/g, iMS);
         }
       })();
