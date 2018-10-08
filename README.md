@@ -1,5 +1,5 @@
 <div align="center"> 
-<img width="600" height="250" src="https://s3-us-west-2.amazonaws.com/andrew-sadowski-images/msNormalizer.png">
+<img width="auto" height="auto" src="https://s3-us-west-2.amazonaws.com/andrew-sadowski-images/msNormalizer.png">
 </div>
 
 Have a subtitle that has overlapping millisecond timestamp values? This NodeJS CLI checks for discrepancies in the MS portion of the timestamp from the end-time and start-time of subtitles. It then updates the MS to be continuous. Install globally via NPM.
