@@ -25,3 +25,9 @@ msNormalizer -f '/absolute/path/to/file.srt'
 ```
 
 An srt will be generated in the same location as the srt provided with all millisecond discrepancies normalized. It will have '\_msUpdated' appended to the file name.
+
+If you have an entire directory of srts you'd like to run through, use the directory flag as follows:
+
+```
+msNormalizer -d '/absolute/path/to/dir/'
+```
