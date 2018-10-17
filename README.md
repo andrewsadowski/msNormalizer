@@ -18,16 +18,18 @@ npm install -g srt-ms-normalizer
 
 ### Running Application
 
-After installing globally via NPM:
+After installing globally via NPM, run on either a single file or directory:
+
+#### Single File
 
 ```
 msNormalizer -f '/absolute/path/to/file.srt'
 ```
 
-An srt will be generated in the same location as the srt provided with all millisecond discrepancies normalized. It will have '\_msUpdated' appended to the file name.
-
-If you have an entire directory of srts you'd like to run through, use the directory flag as follows:
+#### Directory
 
 ```
 msNormalizer -d '/absolute/path/to/dir/'
 ```
+
+An srt will be generated in the same location as the srt or directory provided with all millisecond discrepancies normalized. It will have '\_msUpdated' appended to the file name.
