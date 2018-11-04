@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const chalk = require('chalk');
-const { msNormalizer, handleDirOfSubs } = require('./utils.js');
+const { msNormalizer, handleDirOfSubs } = require('../lib/utils.js');
 const argv = require('yargs')
   .alias('f', 'filePath')
   .usage('Usage: add a file path with the -f flag')
@@ -29,10 +29,8 @@ const executeRequest = (path => {
     handleDirOfSubs(path);
   }
   console.log(
-    `${chalk.magenta.bold('msNormalizer says:\n')}${chalk.cyan.bold(
-      `Files successfully created!\nUpdated files can be found here: ${chalk.red.bold(
-        path
-      )}`
+    `${chalk.magenta.bold('\n\nSUCCESS!\n')}${chalk.cyan.bold(
+      `Files can be found here: ${chalk.red.bold(path)}`
     )}`
   );
 })(filePath || dirPath);
