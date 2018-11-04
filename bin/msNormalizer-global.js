@@ -1,12 +1,6 @@
 #!/usr/bin/env node
 
-const parser = require('subtitles-parser');
-const fs = require('fs');
-const path = require('path');
-const {
-  msNormalizer,
-  handleDirOfSubs
-} = require('../lib/utils.js');
+const { msNormalizer, handleDirOfSubs } = require('../lib/utils.js');
 const argv = require('yargs')
   .alias('f', 'filePath')
   .usage('Usage: add a file path with the -f flag')
