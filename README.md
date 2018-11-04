@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://www.npmjs.com/package/srt-ms-normalizer">
-  <img src="https://img.shields.io/badge/npm_package-v1.0.10-brightgreen.svg?style=flat-square" alt="npm package version" />
+  <img src="https://img.shields.io/badge/npm_package-v2.0.0-brightgreen.svg?style=flat-square" alt="npm package version" />
   </a>
     <a href="https://github.com/prettier/prettier">
   <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style" />
