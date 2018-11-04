@@ -4,9 +4,6 @@ const parser = require('subtitles-parser');
 const fs = require('fs');
 const path = require('path');
 const {
-  getDefaultDirPath,
-  getFileName,
-  writeSubToFile,
   msNormalizer,
   handleDirOfSubs
 } = require('../lib/utils.js');
