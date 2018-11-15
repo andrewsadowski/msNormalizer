@@ -6,6 +6,9 @@
   <a href="https://www.npmjs.com/package/srt-ms-normalizer">
     <img src="https://img.shields.io/npm/v/srt-ms-normalizer.svg?style=flat-square" alt="npm version">
   </a>
+    <a href="https://www.npmjs.com/package/srt-ms-normalizer">
+    <img src="https://img.shields.io/npm/dt/srt-ms-normalizer.svg?style=flat-square" alt="npm downloads">
+  </a>
   <a href="https://www.npmjs.com/package/srt-ms-normalizer">
     <img src="https://img.shields.io/npm/dm/srt-ms-normalizer.svg?style=flat-square" alt="npm downloads monthly">
   </a>
