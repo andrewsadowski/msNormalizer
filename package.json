@@ -1,6 +1,6 @@
 {
   "name": "srt-ms-normalizer",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "NodeJS CLI that fixes millisecond discrepancies between individual subtitles.",
   "url": "https://github.com/andrewsadowski/srt-millisecond-normalizer",
   "repository": "andrewsadowski/srt-millisecond-normalizer",
