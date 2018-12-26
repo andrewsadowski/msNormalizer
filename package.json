@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node lib/msNormalizer.js",
     "start:watch": "nodemon lib/msNormalizer.js",
-    "test": "mocha lib/msNormalizer.test.js",
+    "test": "mocha lib/__tests__/msNormalizer.test.js",
     "test:watch": "nodemon --exec 'npm test'"
   },
   "bin": {
