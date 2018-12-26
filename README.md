@@ -1,5 +1,7 @@
 <div align="center"> 
+  <a href="https://msnormalizer.com/" alt="msnormalizer-site">
   <img width="auto" height="auto" src="https://s3-us-west-2.amazonaws.com/andrew-sadowski-images/msNormalizer.png">
+  </a>
 </div>
 <br />
 <p align="center">
@@ -29,7 +31,6 @@ Install dependencies via NPM/Yarn to run
 
 ```bash
 npm install -g srt-ms-normalizer
-
 ```
 
 ### Running Application
@@ -40,14 +41,12 @@ After installing globally via NPM, run on either a single file or directory:
 
 ```bash
 msNormalizer -f '/absolute/path/to/file.srt'
-
 ```
 
 #### Directory
 
 ```bash
 msNormalizer -d '/absolute/path/to/dir/'
-
 ```
 
 An srt will be generated in the same location as the srt or directory provided with all millisecond discrepancies normalized. It will have '\_msUpdated' appended to the file name.
