@@ -1,6 +1,7 @@
 #!/usr/bin/env node
+
 const chalk = require('chalk');
-const { msNormalizer, handleDirOfSubs } = require('./utils.js');
+const { msNormalizer, handleDirOfSubs } = require('../lib/utils.js');
 const meow = require('meow');
 
 const cli = meow(
